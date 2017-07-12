@@ -5,6 +5,7 @@ defmodule Rumbl.User do
     model
     |> cast(params, [:name, :username, :password]) # Allowed values
     |> validate_required([:name, :username]) # Required values
+    |> unique_constraint(:username) # Required values
     |> validate_length(:username, min: 3, max: 20) # Required values
   end
 
