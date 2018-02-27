@@ -9,7 +9,7 @@ config :rumbl, Rumbl.Endpoint,
 
 config :logger, level: :info
 
-config :hello, Rumbl.Repo,
+config :rumbl, Rumbl.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: System.get_env("DATABASE_URL"),
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
