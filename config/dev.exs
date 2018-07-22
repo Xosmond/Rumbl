@@ -7,6 +7,8 @@ use Mix.Config
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
 config :rumbl, Rumbl.Endpoint,
+  url: [host: "localhost"],
+  secret_key_base: "XVoJyoeqyOIOR+mYrZYW8uJnKgrNSKKWpwzqxoaofYQNITXY0kAyyM6iD1Tqom3/",
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
